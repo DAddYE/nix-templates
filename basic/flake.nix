@@ -13,7 +13,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         lib = nixpkgs.lib;
         package = with pkgs; callPackage ./. { inherit pkgs; };
-      in {
+      in rec {
         app = pkgs.stdenv.mkDerivation {
           name = "TODO";
           src = pkgs.lib.cleanSource ./.;
