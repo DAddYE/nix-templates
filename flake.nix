@@ -6,9 +6,8 @@
     templates = {
       basic = {
         path = ./basic;
-        description = "Basic flake template with direnv support";
+        description = "A very basic flake";
       };
-
     };
 
     defaultTemplate = self.templates.basic;
